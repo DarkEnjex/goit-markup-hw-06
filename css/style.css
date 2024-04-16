@@ -251,8 +251,10 @@ span {
 /* ? ------- Advantages ------- */
 
 .advantages {
-    padding-bottom: 120px;
-    padding-top: 120px;
+    /* padding-bottom: 120px;
+    padding-top: 120px; */
+    padding-top: 36px;
+    padding-bottom: 48px;
 }
 
 .visually-hidden {
@@ -274,8 +276,10 @@ span {
 }
 
 .advantages-title {
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500;
+    font-size: 20px; */
+    font-weight: 700;
+    font-style: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -293,7 +297,8 @@ span {
 }
 
 .advantages-icon-items {
-    display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     gap: 24px;
