@@ -63,8 +63,9 @@ textarea {
 }
 
 .container {
-    max-width: 1158px;
+    /* max-width: 1158px; */
     /* width: 1158px; */
+    max-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -260,11 +261,14 @@ span {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .advantages-items {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .advantages-title {
@@ -278,7 +282,8 @@ span {
 }
 
 .advantages-text {
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
