@@ -195,14 +195,14 @@ span {
 
 .solutions {
     background-color: #2e2f42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
     background: rgba(46, 47, 66, 0.7);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* max-width: 1440px; */
+    padding: 72px 0;
 }
 
 .solutions-wrap {
@@ -213,14 +213,18 @@ span {
 
 .solutions-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px;
+    line-height: 1.07; */
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
     margin: 0 auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+    /* margin-bottom: 48px; */
+    /* max-width: 496px; */
+    margin-bottom: 72px;
+    max-width: 216px;
 }
 
 .solutions-btn {
@@ -912,6 +916,19 @@ span {
         max-width: 768px;
     }
 
+    /* ? ------------ Solutions --------- */
+
+    .solutions {
+        padding: 112px 0;
+    }
+
+    .solutions-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
     /* ? --------ADVANTUGES -------- */
 
     .advantages-menu {
@@ -956,6 +973,18 @@ span {
         padding-right: 15px;
     }
 
+    /* ? ------------ Solutions --------- */
+
+    .solutions {
+        padding: 188px 0;
+    }
+
+    .solutions-title {
+        margin-bottom: 48px;
+    }
+
+    /* ? ------------ Advantages --------- */
+
     .advantages {
         padding-bottom: 120px;
         padding-top: 120px;
@@ -981,6 +1010,8 @@ span {
     .advantages-icon-items {
         display: flex;
     }
+
+    /* ? ------------ Team --------- */
 
     .team {
         padding-top: 120px;
