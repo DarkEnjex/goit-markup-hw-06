@@ -530,16 +530,23 @@ span {
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: 0 auto;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    /* align-items: baseline; */
+    justify-content: center;
+    text-align: center;
 }
 
 .foot-logo-cont {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -573,7 +580,8 @@ span {
 }
 
 .foot-icons-cont {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    margin-bottom: 72px;
 }
 
 .footer-icons-text {
@@ -617,7 +625,8 @@ span {
 }
 
 .foot-email-cont {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+
 }
 
 .footer-email-text {
@@ -631,7 +640,10 @@ span {
 
 .footer-email {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    text-align: center;
+    justify-content: center;
 }
 
 .footer-email-label {
@@ -650,6 +662,7 @@ span {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    margin-bottom: 16px;
 }
 
 .footer-email-input::placeholder {
@@ -676,6 +689,7 @@ span {
 
 .footer-email-icon {
     margin-left: 16px;
+    fill: #FFFFFF;
 }
 
 /* ! -------------------- MODAL ----------------------! */
@@ -964,6 +978,9 @@ span {
     .partfolio-items {
         width: calc((100% - 24px) / 2);
     }
+
+    /* ? ------------- FOOTER ------------- */
+
 }
 
 @media screen and (min-width: 1158px) {
