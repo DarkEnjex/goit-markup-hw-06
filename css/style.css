@@ -425,8 +425,10 @@ span {
 /* ? ------------ Partfolio ------------ */
 
 .partfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .partfolio-title {
@@ -443,16 +445,17 @@ span {
 .partfolio-menu {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    /* column-gap: 24px;
+    row-gap: 48px; */
+    gap: 48px;
 }
 
 .partfolio-items {
     border: 1px solid #e7e9fc;
     width: 360px;
-    height: 420px;
+    /* height: 420px; */
     background: #fff;
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     border-top: none;
     margin-bottom: 8px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -909,6 +912,8 @@ span {
         max-width: 768px;
     }
 
+    /* ? --------ADVANTUGES -------- */
+
     .advantages-menu {
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -917,6 +922,8 @@ span {
     .advantages-items {
         width: calc((100% - 24px) / 2);
     }
+
+    /* ? --------- TEAM ----------- */
 
     .team>.container {
         padding-right: 108px;
@@ -928,6 +935,16 @@ span {
     }
 
     .team-items {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* ? ------------ PARTFOLIO --------- */
+
+    .partfolio-menu {
+        gap: 72px 24px;
+    }
+
+    .partfolio-items {
         width: calc((100% - 24px) / 2);
     }
 }
@@ -981,6 +998,21 @@ span {
 
     .team-items {
         width: calc((100% - 72px) / 4);
+    }
+
+    /* ? ------------ PARTFOLIO --------- */
+
+    .partfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .partfolio-menu {
+        gap: 48px 24px;
+    }
+
+    .partfolio-items {
+        width: calc((100% - 48px) / 3);
     }
 
 }
