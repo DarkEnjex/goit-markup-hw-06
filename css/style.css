@@ -103,7 +103,8 @@ textarea {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    padding: 17px 0;
 }
 
 .navigation-logo:hover,
@@ -116,8 +117,8 @@ span {
 }
 
 .navigation-menu {
-    display: flex;
-    gap: 40px;
+    display: none;
+    /* gap: 40px; */
     position: relative;
     color: #404bbf;
 }
@@ -163,12 +164,11 @@ span {
 
 .address {
     font-style: normal;
+    display: none;
 }
 
 .address-menu {
-    display: flex;
-    gap: 40px;
-
+    /* gap: 40px; */
 }
 
 .address-link {
@@ -187,6 +187,14 @@ span {
 .address-link:focus {
     color: #404bbf;
     /* text-decoration: underline; */
+}
+
+.open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
 
 /* *------------ MAIN --------------* */
@@ -938,6 +946,37 @@ span {
         max-width: 768px;
     }
 
+    /* ? ----------- HEADER --------------- */
+
+
+    .navigation-logo {
+        margin-right: 120px;
+    }
+
+    .navigation-menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address {
+        display: block;
+    }
+
+    .address-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .address-link {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    .open-menu-btn {
+        display: none;
+    }
+
     /* ? ------------ Solutions --------- */
 
     .solutions {
@@ -1000,6 +1039,7 @@ span {
 
     /* ? ------------- FOOTER ------------- */
 
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1007,6 +1047,22 @@ span {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    /* ? ----------- HEADER --------------- */
+
+    .navigation-logo {
+        margin-right: 76px;
+    }
+
+    .address-menu {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     /* ? ------------ Solutions --------- */
@@ -1092,4 +1148,5 @@ span {
         width: calc((100% - 48px) / 3);
     }
 
+    /* ? ---------------------------- */
 }
