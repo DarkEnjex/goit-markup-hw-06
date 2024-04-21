@@ -999,6 +999,10 @@ span {
     margin-bottom: 24px;
 }
 
+.modal-check-lbl {
+    flex-shrink: 0;
+}
+
 .modal-check-text {
     display: flex;
     /* flex-wrap: wrap; */
