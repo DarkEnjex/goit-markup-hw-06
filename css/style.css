@@ -262,8 +262,12 @@ span {
     color: #404bbf;
 }
 
+.address-mob-menu-div {
+    justify-content: end;
+}
+
 .address-mob-menu {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .address-mob-item {
@@ -1006,7 +1010,7 @@ span {
 .modal-check-text {
     display: flex;
     /* flex-wrap: wrap; */
-    gap: 4px;
+
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
@@ -1021,6 +1025,8 @@ span {
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-shrink: 0;
+    margin-right: 8px;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -1195,6 +1201,13 @@ span {
     .footer-email-label {
         /* display: flex; */
         padding-right: 24px;
+    }
+
+    /* ? ----------- MODAL WINDOW --------- */
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
     }
 }
 
