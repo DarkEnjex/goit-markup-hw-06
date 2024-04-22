@@ -345,6 +345,7 @@ span {
     background-size: cover;
     padding: 72px 0;
     max-width: 320px;
+    margin: 0 auto;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -1135,6 +1136,7 @@ span {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/tablet/people-office-bg@1x-tb.jpg);
         max-width: 768px;
+        margin: 0 auto;
 
     }
 
@@ -1266,6 +1268,7 @@ span {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office-bg.jpg);
         max-width: 1440px;
+        margin: 0 auto;
     }
 
     .solutions-title {
