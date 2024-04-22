@@ -291,6 +291,10 @@ span {
 
 .address-mob-link {}
 
+.mob-link {
+    color: #404bbf;
+}
+
 .mob-icons-menu {
     display: flex;
     align-items: center;
@@ -340,6 +344,7 @@ span {
     background-position: center;
     background-size: cover;
     padding: 72px 0;
+    max-width: 320px;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -426,11 +431,11 @@ span {
     /* font-weight: 500;
     font-size: 20px; */
     font-weight: 700;
-    font-style: 36px;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 8px;
+    text-align: center;
     margin-bottom: 8px;
 }
 
@@ -599,21 +604,22 @@ span {
 }
 
 .partfolio-items {
-    border: 1px solid #e7e9fc;
-    width: 360px;
+    width: 100%;
     /* height: 420px; */
     background: #fff;
     /* width: calc((100% - 48px) / 3); */
     border-top: none;
-    margin-bottom: 8px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    cursor: pointer;
 }
 
 .partfolio-items:hover,
 .partfolio-items:focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .partfolio-items:hover .partfolio-cover-text {
@@ -642,7 +648,7 @@ span {
     padding: 40px 32px;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -741,6 +747,7 @@ span {
 .footer-icons-menu {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-icons-items {
@@ -795,7 +802,7 @@ span {
 }
 
 .footer-email-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -868,7 +875,8 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    /* padding: 72px 24px 24px 24px; */
+    padding: 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -1003,14 +1011,9 @@ span {
     margin-bottom: 24px;
 }
 
-.modal-check-lbl {
-    flex-shrink: 0;
-}
 
 .modal-check-text {
     display: flex;
-    /* flex-wrap: wrap; */
-
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
@@ -1042,9 +1045,12 @@ span {
     color: #4d5ae5;
 }
 
+.modal-check-sp {
+    cursor: pointer;
+}
 
 
-.modal-check:checked+.modal-check-text span {
+.modal-check:checked+.modal-check-text>.modal-check-sp {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
@@ -1128,6 +1134,7 @@ span {
         padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/tablet/people-office-bg@1x-tb.jpg);
+        max-width: 768px;
 
     }
 
@@ -1155,6 +1162,10 @@ span {
 
     .advantages-items {
         width: calc((100% - 24px) / 2);
+    }
+
+    .advantages-title {
+        text-align: left;
     }
 
     /* ? --------- TEAM ----------- */
@@ -1198,9 +1209,22 @@ span {
         /* justify-content: center; */
     }
 
+    .foot-logo-cont {
+        margin-bottom: 0;
+    }
+
+    .foot-icons-cont {
+        margin-bottom: 0;
+    }
+
     .footer-email-label {
         /* display: flex; */
         padding-right: 24px;
+    }
+
+    .footer-email-input {
+        width: 264px;
+        margin-bottom: 0;
     }
 
     /* ? ----------- MODAL WINDOW --------- */
@@ -1208,6 +1232,7 @@ span {
     .modal {
         width: 408px;
         min-height: 584px;
+        padding: 24px;
     }
 }
 
@@ -1240,6 +1265,7 @@ span {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office-bg.jpg);
+        max-width: 1440px;
     }
 
     .solutions-title {
@@ -1315,6 +1341,14 @@ span {
 
     .partfolio-items {
         width: calc((100% - 48px) / 3);
+        box-shadow: none;
+    }
+
+    .partfolio-items:hover,
+    .partfolio-items:focus {
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+        cursor: pointer;
     }
 
     /* ? ------------- HEADER --------------- */
